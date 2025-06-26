@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function Header({ month, year, onPrev, onNext, onSelect, onToday }) {
   const [showPicker, setShowPicker] = useState(false);
 
-  const years = Array.from({ length: 20 }, (_, i) => 2015 + i);
+  const years = Array.from({ length: 200 }, (_, i) => 1900 + i);
   const months = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
